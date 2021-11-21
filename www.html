@@ -1,0 +1,70 @@
+www.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .eltern{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .eltern div{
+            text-align: center;
+            margin: 10px;
+        }
+         .kind1{
+             flex: 1;
+             background-color: aqua;
+
+         }
+         .kind2{
+
+          flex:2;
+          background-color: brown;
+         }
+         .kind3{
+             display: flex;
+             
+             flex-grow: 2;
+             background-color: rosybrown;
+             padding: 5px 50px;
+         }
+         .kind4{
+             flex-grow: 2;
+             background-color: royalblue;
+             padding: 120p 90px;
+
+    </style>
+</head>
+<body>
+    <div class="eltern">
+        <div class="kind1">einelement</div>
+        <div class="kind2">einelement</div>
+        <div class="kind1">einelement</div>
+    </div>
+    <div class="eltern">
+        <div class="kind1">einelement</div>
+        <div class="kind1">einelement</div>
+    </div>
+    <div class="eltern">
+        <div class="kind1"> 
+            <div class="eltern">
+                <div class="kind3">
+                    <img src="https://www.tmssoftware.com/images/visualstudiocodelogo.png" alt="VSC Logo">
+ 
+ 
+                </div>
+                <div class="kind3">Informationen</div>
+                
+            </div>
+        </div>
+
+ <div class="kind4">einelement</div>
+    </div>
+</body>
+</html>
